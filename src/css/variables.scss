@@ -1,0 +1,12 @@
+@import "design-tokens";
+
+:root {
+  --grid-columns-count: #{$grid_columns_count};
+  --grid-gutter-x-sm: #{$grid_gutter_x};
+  --grid-gutter-x-lg: #{$grid_gutter_x_lg};
+  --grid-gutter-x: var(--grid-gutter-x-sm);
+
+  @media (min-width: #{$screen_lg_min}) {
+    --grid-gutter-x: var(--grid-gutter-x-lg);
+  }
+}

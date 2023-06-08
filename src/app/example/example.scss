@@ -1,0 +1,14 @@
+.example {
+  border: 1px solid #495057;
+  padding: 24px;
+  border-radius: 4px;
+
+  [class^="col"] > .example-container {
+    --violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgba(var(--violet-rgb), 0.15);
+    border: 1px solid rgba(var(--violet-rgb), 0.3);
+  }
+}

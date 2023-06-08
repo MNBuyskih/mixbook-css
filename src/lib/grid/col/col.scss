@@ -1,0 +1,15 @@
+@import "src/css/design-tokens";
+@import "src/css/mixins";
+
+.col {
+  @extend .box-sizing;
+  flex: 1 0 0;
+}
+
+@for $i from 1 through $grid_columns_count {
+  .col-#{$i} {
+    @extend .box-sizing;
+    flex: 0 0 auto;
+    width: calc(100% / (#{$grid_columns_count} / #{$i}));
+  }
+}

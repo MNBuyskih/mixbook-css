@@ -1,0 +1,17 @@
+@import "src/css/mixins";
+
+.row {
+  @extend .box-sizing;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-.5 * var(--grid-gutter-x));
+  margin-left: calc(-.5 * var(--grid-gutter-x));
+
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--grid-gutter-x) * .5);
+    padding-left: calc(var(--grid-gutter-x) * .5);
+  }
+}
