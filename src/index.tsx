@@ -31,6 +31,45 @@ const App = () => (
               <div className="example-container">Column</div>
             </Col>
           </Row>
+
+          <Row>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col size={4}>
+              <div className="example-container">Column 4</div>
+            </Col>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+            <Col size={1}>
+              <div className="example-container">Column 1</div>
+            </Col>
+            <Col size={3}>
+              <div className="example-container">Column 3</div>
+            </Col>
+            <Col size={2}>
+              <div className="example-container">Column 2</div>
+            </Col>
+          </Row>
         </Container>
       </Example>
     </div>
